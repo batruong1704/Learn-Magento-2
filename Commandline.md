@@ -32,3 +32,20 @@ php bin/magento s:d:c
 php bin/magento s:s:d -f
 php bin/magento cache:flush
 ```
+
+# Struction
+## 1.1. App
+  Folder bao gồm các file cối lõi của Magento 2 như module, template, thêm, ngôn ngữ, tệp cấu hình và các thiết lập mặc định của hệ thống. Chúng bao gồm các folder con sau:
+  - code: chứa module của magento
+  - design: chứa các template và skin của module
+  - etc: chứa các tệp cấu hình
+## 1.2. Bin
+  Folder chứa các tập lệnh CLI được sử dụng để quản lý Magento như magento setup, index, ...
+## 1.3. Generated
+  Chứa các tệp được tạo ra tự động bởi magento như tệp cấu hình và tệp dịch
+## 1.4. Pub
+  Chứa các tệp phục vụ cho người dùng như html, css, js và image
+## 1.5. Var
+  Lữu trữ các dữ liêu tạm thời và các file log, file sessions thô, cache, database backups và báo cáo lỗi được lưu trong cache. Nó tái sinh nội dung từ nhiều thư mục con khi chạy trên command.
+## 1.6. Vendor
+  Composer tạo ra thư mục vendor nhằm sử dụng các file composer.json. Folder này bao gồm các thư mục và gói phần mềm bên ngoài mà magento sử dụng và chúng được xác định dưới file composer.json. 
